@@ -1,0 +1,42 @@
+name: Superpowers Brainstorming
+repository: obra/superpowers
+source_paths:
+- skills/brainstorming/SKILL.md
+notes: Strong approval-gated design dialogue, alternatives, scope decomposition, and
+  visual companion; intentionally not a full requirements-governance system.
+scores:
+  project_inspection: 2
+  decision_dependency: 1
+  recommended_answer: 2
+  alternative_approaches: 2
+  clarification_budget: 1
+  scope_decomposition: 2
+  adaptive_depth: 1
+  opportunity_validation: 0
+  brownfield_change: 1
+  evidence_provenance: 0
+  project_constitution: 0
+  living_spec: 0
+  fluid_artifact_actions: 0
+  persistence_handoff: 1
+  multi_workstream: 0
+  visual_validation: 2
+  incremental_updates: 1
+  testable_acceptance: 2
+  readiness_gate: 1
+  independent_review: 0
+  evaluation_harness: 2
+  cross_platform: 2
+  user_approval: 2
+  claim_ledger: 0
+  implementation_alignment: 1
+  prompt_economy: 1
+  extension_hooks: 0
+  executable_visual_tool: 2
+  automated_research_orchestration: 0
+  schema_migrations: 0
+  live_model_eval_adapter: 2
+  codebase_index: 0
+  model_routing_escalation: 0
+  installation_tooling: 2
+  custom_artifact_schemas: 0

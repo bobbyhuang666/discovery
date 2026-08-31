@@ -1,0 +1,7 @@
+schema_version: '1.0'
+name: core-deep
+files:
+  - policies/project-constitution.md
+  - policies/scope-decomposition.md
+  - policies/artifact-graph.md
+  - policies/independent-review.md

@@ -1,0 +1,351 @@
+schema_version: '1.0'
+audit_type: protocol_contract
+warning: Measures explicit protocol coverage in source artifacts, not live model quality
+  or project popularity.
+ranking:
+- name: Discovery v17.1
+  profile: benchmarks/profiles/discovery-v17.1.yaml
+  weighted_score: 280
+  max_weighted_score: 284
+  coverage_percent: 98.6
+  notes: Runtime candidate with Quick Exit, capability negotiation, and light-model
+    contracts. Scores show explicit contract coverage, not proven live-model superiority.
+- name: GSD
+  profile: benchmarks/profiles/gsd.yaml
+  weighted_score: 252
+  max_weighted_score: 284
+  coverage_percent: 88.7
+  notes: 'Deep context engineering and execution reliability: adaptive questioning,
+    research, persistent state, multi-workstream, verification gates, claim provenance,
+    cross-AI review, and broad runtime support.'
+- name: BMad Method
+  profile: benchmarks/profiles/bmad.yaml
+  weighted_score: 233
+  max_weighted_score: 284
+  coverage_percent: 82.0
+  notes: Broad lifecycle coverage with create/update/validate intents, adaptive quick
+    and enterprise paths, product validation, project context, readiness gates, and
+    specialized roles.
+- name: OpenSpec
+  profile: benchmarks/profiles/openspec.yaml
+  weighted_score: 194
+  max_weighted_score: 284
+  coverage_percent: 68.3
+  notes: Best-in-class fluid artifact actions and living change lifecycle, especially
+    for brownfield and parallel changes. Discovery evidence and opportunity validation
+    are not its primary focus.
+- name: Discovery v15
+  profile: benchmarks/profiles/discovery-v15.yaml
+  weighted_score: 191
+  max_weighted_score: 284
+  coverage_percent: 67.3
+  notes: Baseline before competitor-driven v16 changes.
+- name: GitHub Spec Kit
+  profile: benchmarks/profiles/spec-kit.yaml
+  weighted_score: 179
+  max_weighted_score: 284
+  coverage_percent: 63.0
+  notes: Strong constitution, five-question clarification budget, incremental spec
+    updates, checklists, planning and readiness flow. Less specialized for opportunity
+    discovery and visual elicitation.
+- name: Superpowers Brainstorming
+  profile: benchmarks/profiles/superpowers.yaml
+  weighted_score: 136
+  max_weighted_score: 284
+  coverage_percent: 47.9
+  notes: Strong approval-gated design dialogue, alternatives, scope decomposition,
+    and visual companion; intentionally not a full requirements-governance system.
+- name: Matt Pocock Grilling
+  profile: benchmarks/profiles/grilling.yaml
+  weighted_score: 65
+  max_weighted_score: 284
+  coverage_percent: 22.9
+  notes: 'Exceptional minimal interview primitive: inspect facts, ask decisions, follow
+    decision dependencies, recommend answers. Deliberately delegates specifications
+    and governance elsewhere.'
+scenario_results:
+  quick_internal_script:
+    description: Small authorized script should converge without enterprise ceremony
+    ranking:
+    - name: Discovery v17.1
+      score: 42
+      maximum: 42
+      coverage_percent: 100.0
+    - name: OpenSpec
+      score: 38
+      maximum: 42
+      coverage_percent: 90.5
+    - name: Discovery v15
+      score: 34
+      maximum: 42
+      coverage_percent: 81.0
+    - name: GSD
+      score: 34
+      maximum: 42
+      coverage_percent: 81.0
+    - name: Matt Pocock Grilling
+      score: 34
+      maximum: 42
+      coverage_percent: 81.0
+    - name: Superpowers Brainstorming
+      score: 34
+      maximum: 42
+      coverage_percent: 81.0
+    - name: BMad Method
+      score: 30
+      maximum: 42
+      coverage_percent: 71.4
+    - name: GitHub Spec Kit
+      score: 25
+      maximum: 42
+      coverage_percent: 59.5
+  vague_product_opportunity:
+    description: Unvalidated product idea should prioritize evidence and decisive
+      experiments
+    ranking:
+    - name: BMad Method
+      score: 38
+      maximum: 42
+      coverage_percent: 90.5
+    - name: Discovery v17.1
+      score: 38
+      maximum: 42
+      coverage_percent: 90.5
+    - name: GSD
+      score: 34
+      maximum: 42
+      coverage_percent: 81.0
+    - name: Discovery v15
+      score: 26
+      maximum: 42
+      coverage_percent: 61.9
+    - name: GitHub Spec Kit
+      score: 21
+      maximum: 42
+      coverage_percent: 50.0
+    - name: OpenSpec
+      score: 17
+      maximum: 42
+      coverage_percent: 40.5
+    - name: Superpowers Brainstorming
+      score: 12
+      maximum: 42
+      coverage_percent: 28.6
+    - name: Matt Pocock Grilling
+      score: 4
+      maximum: 42
+      coverage_percent: 9.5
+  brownfield_behavior_change:
+    description: Existing-system change should recover current truth and protect regressions
+    ranking:
+    - name: Discovery v17.1
+      score: 54
+      maximum: 54
+      coverage_percent: 100.0
+    - name: GSD
+      score: 49
+      maximum: 54
+      coverage_percent: 90.7
+    - name: Discovery v15
+      score: 46
+      maximum: 54
+      coverage_percent: 85.2
+    - name: OpenSpec
+      score: 46
+      maximum: 54
+      coverage_percent: 85.2
+    - name: BMad Method
+      score: 45
+      maximum: 54
+      coverage_percent: 83.3
+    - name: GitHub Spec Kit
+      score: 31
+      maximum: 54
+      coverage_percent: 57.4
+    - name: Superpowers Brainstorming
+      score: 19
+      maximum: 54
+      coverage_percent: 35.2
+    - name: Matt Pocock Grilling
+      score: 15
+      maximum: 54
+      coverage_percent: 27.8
+  visual_workflow_ambiguity:
+    description: Visual preference should be resolved with criticizable alternatives
+    ranking:
+    - name: Discovery v17.1
+      score: 36
+      maximum: 36
+      coverage_percent: 100.0
+    - name: Superpowers Brainstorming
+      score: 36
+      maximum: 36
+      coverage_percent: 100.0
+    - name: BMad Method
+      score: 32
+      maximum: 36
+      coverage_percent: 88.9
+    - name: GSD
+      score: 32
+      maximum: 36
+      coverage_percent: 88.9
+    - name: Discovery v15
+      score: 25
+      maximum: 36
+      coverage_percent: 69.4
+    - name: OpenSpec
+      score: 20
+      maximum: 36
+      coverage_percent: 55.6
+    - name: GitHub Spec Kit
+      score: 16
+      maximum: 36
+      coverage_percent: 44.4
+    - name: Matt Pocock Grilling
+      score: 16
+      maximum: 36
+      coverage_percent: 44.4
+  high_risk_ai_system:
+    description: AI autonomy and sensitive data require principles, evidence, review,
+      and readiness
+    ranking:
+    - name: Discovery v17.1
+      score: 52
+      maximum: 52
+      coverage_percent: 100.0
+    - name: BMad Method
+      score: 48
+      maximum: 52
+      coverage_percent: 92.3
+    - name: GSD
+      score: 48
+      maximum: 52
+      coverage_percent: 92.3
+    - name: GitHub Spec Kit
+      score: 40
+      maximum: 52
+      coverage_percent: 76.9
+    - name: Discovery v15
+      score: 33
+      maximum: 52
+      coverage_percent: 63.5
+    - name: OpenSpec
+      score: 25
+      maximum: 52
+      coverage_percent: 48.1
+    - name: Superpowers Brainstorming
+      score: 15
+      maximum: 52
+      coverage_percent: 28.8
+    - name: Matt Pocock Grilling
+      score: 0
+      maximum: 52
+      coverage_percent: 0.0
+  existing_spec_validation:
+    description: A usable PRD should be validated and incrementally clarified, not
+      restarted
+    ranking:
+    - name: Discovery v17.1
+      score: 52
+      maximum: 52
+      coverage_percent: 100.0
+    - name: GitHub Spec Kit
+      score: 52
+      maximum: 52
+      coverage_percent: 100.0
+    - name: BMad Method
+      score: 44
+      maximum: 52
+      coverage_percent: 84.6
+    - name: GSD
+      score: 44
+      maximum: 52
+      coverage_percent: 84.6
+    - name: OpenSpec
+      score: 40
+      maximum: 52
+      coverage_percent: 76.9
+    - name: Discovery v15
+      score: 35
+      maximum: 52
+      coverage_percent: 67.3
+    - name: Superpowers Brainstorming
+      score: 27
+      maximum: 52
+      coverage_percent: 51.9
+    - name: Matt Pocock Grilling
+      score: 4
+      maximum: 52
+      coverage_percent: 7.7
+  parallel_changes:
+    description: Multiple active deltas need isolation, flexible actions, and conflict-aware
+      merge
+    ranking:
+    - name: Discovery v17.1
+      score: 42
+      maximum: 42
+      coverage_percent: 100.0
+    - name: OpenSpec
+      score: 42
+      maximum: 42
+      coverage_percent: 100.0
+    - name: GSD
+      score: 33
+      maximum: 42
+      coverage_percent: 78.6
+    - name: Discovery v15
+      score: 32
+      maximum: 42
+      coverage_percent: 76.2
+    - name: BMad Method
+      score: 30
+      maximum: 42
+      coverage_percent: 71.4
+    - name: GitHub Spec Kit
+      score: 26
+      maximum: 42
+      coverage_percent: 61.9
+    - name: Superpowers Brainstorming
+      score: 5
+      maximum: 42
+      coverage_percent: 11.9
+    - name: Matt Pocock Grilling
+      score: 0
+      maximum: 42
+      coverage_percent: 0.0
+  long_running_discovery:
+    description: Long and interrupted work needs durable context, indexing, migration,
+      and failure escalation
+    ranking:
+    - name: Discovery v17.1
+      score: 36
+      maximum: 36
+      coverage_percent: 100.0
+    - name: GSD
+      score: 36
+      maximum: 36
+      coverage_percent: 100.0
+    - name: BMad Method
+      score: 33
+      maximum: 36
+      coverage_percent: 91.7
+    - name: GitHub Spec Kit
+      score: 26
+      maximum: 36
+      coverage_percent: 72.2
+    - name: OpenSpec
+      score: 26
+      maximum: 36
+      coverage_percent: 72.2
+    - name: Discovery v15
+      score: 14
+      maximum: 36
+      coverage_percent: 38.9
+    - name: Superpowers Brainstorming
+      score: 5
+      maximum: 36
+      coverage_percent: 13.9
+    - name: Matt Pocock Grilling
+      score: 0
+      maximum: 36
+      coverage_percent: 0.0

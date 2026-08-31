@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools==82.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discovery-runtime"
+version = "17.1.0"
+description = "Deterministic host runtime and policy router for the Discovery skill"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "PyYAML==6.0.3",
+  "jsonschema==4.26.0",
+]
+
+[project.scripts]
+discovery = "discovery_runtime.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.discovery]
+skill_version = "17.1.0"
+state_schema_version = "4.1"

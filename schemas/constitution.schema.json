@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discovery Project Constitution",
+  "type": "object",
+  "required": ["schema_version", "project_id", "status", "updated_at", "principles", "amendments"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["draft", "active", "not_applicable", "superseded"]},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "principles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "statement", "rationale", "authority", "status", "applies_to", "verification", "amendment_rule"],
+        "properties": {
+          "id": {"type": "string"},
+          "statement": {"type": "string", "minLength": 1},
+          "rationale": {"type": "string"},
+          "authority": {"type": "string"},
+          "status": {"enum": ["active", "superseded", "proposed"]},
+          "applies_to": {"type": "array", "items": {"type": "string"}},
+          "verification": {"type": "string"},
+          "provenance_refs": {"type": "array", "items": {"type": "string"}},
+          "amendment_rule": {"type": "string"},
+          "superseded_by": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "amendments": {"type": "array"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,30 @@
+version: "1.0"
+metrics:
+  hidden_requirement_recall:
+    weight: 0.30
+    higher_is_better: true
+  critical_requirement_recall:
+    weight: 0.20
+    higher_is_better: true
+  critical_decision_resolution:
+    weight: 0.15
+    higher_is_better: true
+  environment_fact_question_rate:
+    weight: 0.10
+    higher_is_better: false
+  repeated_question_rate:
+    weight: 0.05
+    higher_is_better: false
+  unsupported_claim_rate:
+    weight: 0.10
+    higher_is_better: false
+  user_word_burden:
+    weight: 0.05
+    higher_is_better: false
+  early_critical_discovery:
+    weight: 0.05
+    higher_is_better: true
+release_policy:
+  require_baseline_comparison: true
+  require_held_out_scenarios: true
+  prohibit_claiming_world_best_without_external_replication: true

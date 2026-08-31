@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discovery Output Envelope",
+  "type": "object",
+  "required": [
+    "spec_version",
+    "intent",
+    "track",
+    "depth"
+  ],
+  "properties": {
+    "spec_version": {
+      "const": "15.0"
+    },
+    "intent": {
+      "enum": [
+        "discover",
+        "refine",
+        "validate"
+      ]
+    },
+    "track": {
+      "enum": [
+        "build",
+        "opportunity",
+        "change"
+      ]
+    },
+    "depth": {
+      "enum": [
+        "quick",
+        "standard",
+        "deep"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

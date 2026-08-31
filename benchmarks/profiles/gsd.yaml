@@ -1,0 +1,43 @@
+name: GSD
+repository: gsd-build/get-shit-done
+source_paths:
+- docs/FEATURES.md
+notes: 'Deep context engineering and execution reliability: adaptive questioning,
+  research, persistent state, multi-workstream, verification gates, claim provenance,
+  cross-AI review, and broad runtime support.'
+scores:
+  project_inspection: 2
+  decision_dependency: 2
+  recommended_answer: 1
+  alternative_approaches: 2
+  clarification_budget: 1
+  scope_decomposition: 2
+  adaptive_depth: 2
+  opportunity_validation: 1
+  brownfield_change: 2
+  evidence_provenance: 2
+  project_constitution: 1
+  living_spec: 1
+  fluid_artifact_actions: 1
+  persistence_handoff: 2
+  multi_workstream: 2
+  visual_validation: 2
+  incremental_updates: 2
+  testable_acceptance: 2
+  readiness_gate: 2
+  independent_review: 2
+  evaluation_harness: 2
+  cross_platform: 2
+  user_approval: 2
+  claim_ledger: 2
+  implementation_alignment: 2
+  prompt_economy: 1
+  extension_hooks: 2
+  executable_visual_tool: 2
+  automated_research_orchestration: 2
+  schema_migrations: 2
+  live_model_eval_adapter: 2
+  codebase_index: 2
+  model_routing_escalation: 2
+  installation_tooling: 2
+  custom_artifact_schemas: 1

@@ -1,0 +1,23 @@
+spec_version: '15.0'
+intent: discover
+track: build
+depth: deep
+problem: {}
+actors_and_decision_rights: []
+workflows: {}
+decision_log: []
+requirements:
+  functional: []
+  non_functional: []
+  security_privacy: []
+  data: []
+  integration: []
+  operations: []
+risks: []
+traceability: []
+assumptions_and_unknowns: []
+non_goals: []
+acceptance_and_evaluation: []
+migration_and_rollout: {}
+rollback_and_recovery: {}
+execution_sequence: []

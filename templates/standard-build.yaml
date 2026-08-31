@@ -1,0 +1,24 @@
+spec_version: '15.0'
+intent: discover
+track: build
+depth: standard
+problem:
+  current_state: ''
+  desired_outcome: ''
+actors: []
+workflows:
+  as_is: []
+  to_be: []
+decisions: []
+requirements:
+  p0: []
+  p1: []
+  p2: []
+error_and_edge_behavior: []
+integrations: []
+constraints: []
+non_goals: []
+evidence: []
+assumptions_and_unknowns: []
+acceptance_tests: []
+execution_sequence: []

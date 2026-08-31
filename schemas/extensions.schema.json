@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discovery Extension Hooks",
+  "type": "object",
+  "required": ["schema_version", "hooks"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "hooks": {
+      "type": "object",
+      "required": ["before_orient", "after_inspect", "before_ask", "after_answer", "before_validate", "after_validate", "before_handoff"],
+      "properties": {
+        "before_orient": {"$ref": "#/$defs/hooks"},
+        "after_inspect": {"$ref": "#/$defs/hooks"},
+        "before_ask": {"$ref": "#/$defs/hooks"},
+        "after_answer": {"$ref": "#/$defs/hooks"},
+        "before_validate": {"$ref": "#/$defs/hooks"},
+        "after_validate": {"$ref": "#/$defs/hooks"},
+        "before_handoff": {"$ref": "#/$defs/hooks"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "hooks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "description", "enabled", "mode", "handler"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+          "description": {"type": "string"},
+          "enabled": {"type": "boolean"},
+          "mode": {"enum": ["advisory", "blocking"]},
+          "handler": {"type": "string"},
+          "version": {"type": "string"},
+          "input_artifacts": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

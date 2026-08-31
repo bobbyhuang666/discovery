@@ -1,0 +1,21 @@
+spec_version: '15.0'
+intent: discover
+track: build
+depth: quick
+summary: ''
+outcome: ''
+environment:
+  runtime: ''
+  inputs: []
+  outputs: []
+core_rules: []
+examples:
+- given: ''
+  when: ''
+  then: ''
+error_behavior: []
+constraints: []
+non_goals: []
+assumptions: []
+acceptance_tests: []
+next_steps: []

@@ -1,0 +1,8 @@
+schema_version: "1.0"
+artifacts:
+  - id: implementation-brief
+    description: Quick authorized-build contract
+    schema_path: schemas/output.schema.json
+    enabled: true
+    requires: []
+    enables: [implementation-readiness]

@@ -1,0 +1,45 @@
+schema_version: '1.0'
+domain: api-integration
+aspects:
+- id: API_INTEGRATION-A01
+  name: Contract
+  dimensions:
+  - id: API_INTEGRATION-D01
+    name: Contract
+    slots:
+    - id: API_INTEGRATION-S01-01
+      name: Authentication
+    - id: API_INTEGRATION-S01-02
+      name: Request Schema
+    - id: API_INTEGRATION-S01-03
+      name: Response Schema
+    - id: API_INTEGRATION-S01-04
+      name: Versioning
+- id: API_INTEGRATION-A02
+  name: Reliability
+  dimensions:
+  - id: API_INTEGRATION-D02
+    name: Reliability
+    slots:
+    - id: API_INTEGRATION-S02-01
+      name: Timeout
+    - id: API_INTEGRATION-S02-02
+      name: Retry
+    - id: API_INTEGRATION-S02-03
+      name: Idempotency
+    - id: API_INTEGRATION-S02-04
+      name: Rate Limit
+- id: API_INTEGRATION-A03
+  name: Operations
+  dimensions:
+  - id: API_INTEGRATION-D03
+    name: Operations
+    slots:
+    - id: API_INTEGRATION-S03-01
+      name: Sandbox
+    - id: API_INTEGRATION-S03-02
+      name: Webhook Delivery
+    - id: API_INTEGRATION-S03-03
+      name: Monitoring
+    - id: API_INTEGRATION-S03-04
+      name: Vendor Failure

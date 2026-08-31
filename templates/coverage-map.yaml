@@ -1,0 +1,17 @@
+schema_version: "1.0"
+session_id: example-session
+updated_at: "2026-07-27T00:00:00+00:00"
+concerns:
+  - id: CONCERN-001
+    name: Core outcome
+    status: partial
+    impact: high
+    evidence_refs: []
+    unresolved_decision_ids: []
+    defer_reason: null
+summary:
+  clear: 0
+  partial: 1
+  missing: 0
+  not_applicable: 0
+  deferred: 0

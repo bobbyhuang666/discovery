@@ -1,0 +1,4 @@
+schema_version: '1.0'
+name: auditor-operations
+files:
+  - auditors/operations.md

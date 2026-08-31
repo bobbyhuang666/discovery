@@ -1,0 +1,45 @@
+schema_version: '1.0'
+domain: enterprise-saas
+aspects:
+- id: ENTERPRISE_SAAS-A01
+  name: Tenancy
+  dimensions:
+  - id: ENTERPRISE_SAAS-D01
+    name: Tenancy
+    slots:
+    - id: ENTERPRISE_SAAS-S01-01
+      name: Tenant Boundary
+    - id: ENTERPRISE_SAAS-S01-02
+      name: Ownership
+    - id: ENTERPRISE_SAAS-S01-03
+      name: Sharing
+    - id: ENTERPRISE_SAAS-S01-04
+      name: Admin
+- id: ENTERPRISE_SAAS-A02
+  name: Identity
+  dimensions:
+  - id: ENTERPRISE_SAAS-D02
+    name: Identity
+    slots:
+    - id: ENTERPRISE_SAAS-S02-01
+      name: Sso
+    - id: ENTERPRISE_SAAS-S02-02
+      name: Provisioning
+    - id: ENTERPRISE_SAAS-S02-03
+      name: Roles
+    - id: ENTERPRISE_SAAS-S02-04
+      name: Audit
+- id: ENTERPRISE_SAAS-A03
+  name: Adoption
+  dimensions:
+  - id: ENTERPRISE_SAAS-D03
+    name: Adoption
+    slots:
+    - id: ENTERPRISE_SAAS-S03-01
+      name: Migration
+    - id: ENTERPRISE_SAAS-S03-02
+      name: Training
+    - id: ENTERPRISE_SAAS-S03-03
+      name: Support
+    - id: ENTERPRISE_SAAS-S03-04
+      name: Rollout

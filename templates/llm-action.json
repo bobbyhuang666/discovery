@@ -1,0 +1,13 @@
+{
+  "action": "inspect",
+  "decision_id": null,
+  "question": null,
+  "recommendation": null,
+  "rationale": "Inspect available project evidence before asking discoverable facts.",
+  "reversal_conditions": [],
+  "state_events": [],
+  "requested_files": [],
+  "user_visible_message": null,
+  "options": [],
+  "capability_fallback": null
+}

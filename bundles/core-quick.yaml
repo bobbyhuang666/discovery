@@ -1,0 +1,7 @@
+schema_version: '1.0'
+name: core-quick
+files:
+  - policies/next-action-selector.md
+  - policies/evidence-management.md
+  - policies/assumption-budget.md
+  - policies/stop-policy.md

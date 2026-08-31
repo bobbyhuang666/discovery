@@ -1,0 +1,318 @@
+[
+  {
+    "id": "vba-purchase-import",
+    "public_prompt": "Create a VBA macro that scans purchase workbooks and consolidates the data.",
+    "expected_intent": "discover",
+    "expected_track": "build",
+    "expected_depth": "quick",
+    "discoverable_facts": [
+      {
+        "id": "F1",
+        "fact": "Workbook structure and headers can be inspected from sample files"
+      }
+    ],
+    "decision_only_information": [
+      {
+        "id": "D1",
+        "information": "How duplicate purchase rows should be handled"
+      }
+    ],
+    "hidden_requirements": [
+      {
+        "id": "R1",
+        "requirement": "Preserve source filename and purchase date for traceability",
+        "critical": true
+      },
+      {
+        "id": "R2",
+        "requirement": "Skip locked or corrupt files and report them",
+        "critical": false
+      }
+    ],
+    "critical_decisions": [
+      "D1"
+    ],
+    "stop_conditions": [
+      "input and output defined",
+      "duplicate policy resolved",
+      "failure reporting accepted"
+    ]
+  },
+  {
+    "id": "ai-claims-platform",
+    "public_prompt": "We need an AI platform to approve insurance claims using sensitive documents.",
+    "expected_intent": "discover",
+    "expected_track": "build",
+    "expected_depth": "deep",
+    "discoverable_facts": [
+      {
+        "id": "F1",
+        "fact": "Existing claim status model is available in the repository"
+      }
+    ],
+    "decision_only_information": [
+      {
+        "id": "D1",
+        "information": "Whether AI may make a final denial without human review"
+      }
+    ],
+    "hidden_requirements": [
+      {
+        "id": "R1",
+        "requirement": "Every AI recommendation must retain evidence and model version",
+        "critical": true
+      },
+      {
+        "id": "R2",
+        "requirement": "Low-evidence cases must route to a human reviewer",
+        "critical": true
+      }
+    ],
+    "critical_decisions": [
+      "D1"
+    ],
+    "stop_conditions": [
+      "autonomy boundary resolved",
+      "evaluation threshold defined",
+      "audit trail specified"
+    ]
+  },
+  {
+    "id": "meeting-assistant-opportunity",
+    "public_prompt": "I am considering an AI meeting assistant for small construction firms.",
+    "expected_intent": "discover",
+    "expected_track": "opportunity",
+    "expected_depth": "standard",
+    "discoverable_facts": [
+      {
+        "id": "F1",
+        "fact": "Sample meeting records can be inspected"
+      }
+    ],
+    "decision_only_information": [
+      {
+        "id": "D1",
+        "information": "Which costly meeting outcome matters most"
+      }
+    ],
+    "hidden_requirements": [
+      {
+        "id": "R1",
+        "requirement": "Validation must compare extracted commitments with later project records",
+        "critical": true
+      },
+      {
+        "id": "R2",
+        "requirement": "The experiment needs a kill criterion",
+        "critical": true
+      }
+    ],
+    "critical_decisions": [
+      "D1"
+    ],
+    "stop_conditions": [
+      "problem evidence mapped",
+      "decisive experiment designed",
+      "kill criterion set"
+    ]
+  },
+  {
+    "id": "workspace-migration",
+    "public_prompt": "Add organization workspaces to our existing single-user application.",
+    "expected_intent": "discover",
+    "expected_track": "change",
+    "expected_depth": "deep",
+    "discoverable_facts": [
+      {
+        "id": "F1",
+        "fact": "Current ownership schema is inspectable"
+      },
+      {
+        "id": "F2",
+        "fact": "Authorization tests reveal existing invariants"
+      }
+    ],
+    "decision_only_information": [
+      {
+        "id": "D1",
+        "information": "Whether a resource may belong to multiple workspaces"
+      }
+    ],
+    "hidden_requirements": [
+      {
+        "id": "R1",
+        "requirement": "Existing personal accounts must migrate to a default workspace",
+        "critical": true
+      },
+      {
+        "id": "R2",
+        "requirement": "Cross-workspace access must fail closed",
+        "critical": true
+      }
+    ],
+    "critical_decisions": [
+      "D1"
+    ],
+    "stop_conditions": [
+      "AS-IS corroborated",
+      "ownership decision resolved",
+      "migration and regression tests defined"
+    ]
+  },
+  {
+    "id": "premium-dashboard-refine",
+    "public_prompt": "Refine this dashboard redesign brief so it feels premium and calm without losing information density.",
+    "expected_intent": "refine",
+    "expected_track": "change",
+    "expected_depth": "standard",
+    "discoverable_facts": [
+      {
+        "id": "F1",
+        "fact": "Current dashboard and design tokens can be inspected"
+      }
+    ],
+    "decision_only_information": [
+      {
+        "id": "D1",
+        "information": "Which information must remain visible without interaction"
+      }
+    ],
+    "hidden_requirements": [
+      {
+        "id": "R1",
+        "requirement": "Visual alternatives must preserve the same priority information",
+        "critical": true
+      },
+      {
+        "id": "R2",
+        "requirement": "Reduced-motion behavior must be defined",
+        "critical": false
+      }
+    ],
+    "critical_decisions": [
+      "D1"
+    ],
+    "stop_conditions": [
+      "visual trade-off tested",
+      "critical density preserved",
+      "delta accepted"
+    ]
+  },
+  {
+    "id": "migration-proposal-validate",
+    "public_prompt": "Validate whether this customer database migration proposal is ready for execution.",
+    "expected_intent": "validate",
+    "expected_track": "change",
+    "expected_depth": "deep",
+    "discoverable_facts": [
+      {
+        "id": "F1",
+        "fact": "Schemas, row counts, and migration tests can be inspected"
+      }
+    ],
+    "decision_only_information": [
+      {
+        "id": "D1",
+        "information": "Acceptable reconciliation tolerance"
+      }
+    ],
+    "hidden_requirements": [
+      {
+        "id": "R1",
+        "requirement": "Rollback must preserve writes made during migration",
+        "critical": true
+      },
+      {
+        "id": "R2",
+        "requirement": "A reconciliation report must be retained",
+        "critical": true
+      }
+    ],
+    "critical_decisions": [
+      "D1"
+    ],
+    "stop_conditions": [
+      "blocking findings reported",
+      "evidence gaps identified",
+      "readiness verdict issued"
+    ]
+  },
+  {
+    "id": "b2b-saas-viability",
+    "public_prompt": "Validate pricing, retention, and distribution for a new B2B SaaS idea.",
+    "expected_intent": "discover",
+    "expected_track": "opportunity",
+    "expected_depth": "deep",
+    "discoverable_facts": [
+      {
+        "id": "F1",
+        "fact": "Existing competitor pricing can be researched"
+      }
+    ],
+    "decision_only_information": [
+      {
+        "id": "D1",
+        "information": "Who has budget authority"
+      }
+    ],
+    "hidden_requirements": [
+      {
+        "id": "R1",
+        "requirement": "Retention must be tied to a natural recurring job",
+        "critical": true
+      },
+      {
+        "id": "R2",
+        "requirement": "Service cost must be included in viability",
+        "critical": false
+      }
+    ],
+    "critical_decisions": [
+      "D1"
+    ],
+    "stop_conditions": [
+      "buyer and user separated",
+      "retention hypothesis testable",
+      "distribution experiment defined"
+    ]
+  },
+  {
+    "id": "existing-prd-refine",
+    "public_prompt": "Improve the attached PRD and keep all decisions that are already approved.",
+    "expected_intent": "refine",
+    "expected_track": "build",
+    "expected_depth": "standard",
+    "discoverable_facts": [
+      {
+        "id": "F1",
+        "fact": "Approved decisions and requirement IDs are present in the PRD"
+      }
+    ],
+    "decision_only_information": [
+      {
+        "id": "D1",
+        "information": "Whether one ambiguous workflow should block launch"
+      }
+    ],
+    "hidden_requirements": [
+      {
+        "id": "R1",
+        "requirement": "Stable requirement IDs must be preserved",
+        "critical": true
+      },
+      {
+        "id": "R2",
+        "requirement": "The revision must include a change summary",
+        "critical": false
+      }
+    ],
+    "critical_decisions": [
+      "D1"
+    ],
+    "stop_conditions": [
+      "blocking gaps repaired",
+      "approved scope preserved",
+      "delta summarized"
+    ]
+  }
+]

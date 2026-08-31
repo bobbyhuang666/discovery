@@ -1,0 +1,47 @@
+schema_version: '1.0'
+domain: internal-automation
+aspects:
+- id: INTERNAL_AUTOMATION-A01
+  name: Workflow
+  dimensions:
+  - id: INTERNAL_AUTOMATION-D01
+    name: Workflow
+    slots:
+    - id: INTERNAL_AUTOMATION-S01-01
+      name: Trigger
+    - id: INTERNAL_AUTOMATION-S01-02
+      name: Input Files
+    - id: INTERNAL_AUTOMATION-S01-03
+      name: Business Rules
+    - id: INTERNAL_AUTOMATION-S01-04
+      name: Output
+    - id: INTERNAL_AUTOMATION-S01-05
+      name: Operator Review
+- id: INTERNAL_AUTOMATION-A02
+  name: Failure
+  dimensions:
+  - id: INTERNAL_AUTOMATION-D02
+    name: Failure
+    slots:
+    - id: INTERNAL_AUTOMATION-S02-01
+      name: Locked Files
+    - id: INTERNAL_AUTOMATION-S02-02
+      name: Invalid Format
+    - id: INTERNAL_AUTOMATION-S02-03
+      name: Partial Run
+    - id: INTERNAL_AUTOMATION-S02-04
+      name: Duplicate Records
+- id: INTERNAL_AUTOMATION-A03
+  name: Operations
+  dimensions:
+  - id: INTERNAL_AUTOMATION-D03
+    name: Operations
+    slots:
+    - id: INTERNAL_AUTOMATION-S03-01
+      name: Run Location
+    - id: INTERNAL_AUTOMATION-S03-02
+      name: Permissions
+    - id: INTERNAL_AUTOMATION-S03-03
+      name: Logging
+    - id: INTERNAL_AUTOMATION-S03-04
+      name: Rerun

@@ -1,0 +1,45 @@
+schema_version: '1.0'
+domain: hardware-iot
+aspects:
+- id: HARDWARE_IOT-A01
+  name: Device
+  dimensions:
+  - id: HARDWARE_IOT-D01
+    name: Device
+    slots:
+    - id: HARDWARE_IOT-S01-01
+      name: Capabilities
+    - id: HARDWARE_IOT-S01-02
+      name: Power
+    - id: HARDWARE_IOT-S01-03
+      name: Connectivity
+    - id: HARDWARE_IOT-S01-04
+      name: Sensors
+- id: HARDWARE_IOT-A02
+  name: Safety
+  dimensions:
+  - id: HARDWARE_IOT-D02
+    name: Safety
+    slots:
+    - id: HARDWARE_IOT-S02-01
+      name: Physical Hazard
+    - id: HARDWARE_IOT-S02-02
+      name: Fail Safe
+    - id: HARDWARE_IOT-S02-03
+      name: Manual Override
+    - id: HARDWARE_IOT-S02-04
+      name: Environment
+- id: HARDWARE_IOT-A03
+  name: Fleet
+  dimensions:
+  - id: HARDWARE_IOT-D03
+    name: Fleet
+    slots:
+    - id: HARDWARE_IOT-S03-01
+      name: Provisioning
+    - id: HARDWARE_IOT-S03-02
+      name: Updates
+    - id: HARDWARE_IOT-S03-03
+      name: Telemetry
+    - id: HARDWARE_IOT-S03-04
+      name: Recovery

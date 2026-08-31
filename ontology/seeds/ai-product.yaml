@@ -1,0 +1,47 @@
+schema_version: '1.0'
+domain: ai-product
+aspects:
+- id: AI_PRODUCT-A01
+  name: Model Behavior
+  dimensions:
+  - id: AI_PRODUCT-D01
+    name: Model Behavior
+    slots:
+    - id: AI_PRODUCT-S01-01
+      name: Task Contract
+    - id: AI_PRODUCT-S01-02
+      name: Grounding
+    - id: AI_PRODUCT-S01-03
+      name: Uncertainty
+    - id: AI_PRODUCT-S01-04
+      name: Fallback
+    - id: AI_PRODUCT-S01-05
+      name: Human Review
+- id: AI_PRODUCT-A02
+  name: Evaluation
+  dimensions:
+  - id: AI_PRODUCT-D02
+    name: Evaluation
+    slots:
+    - id: AI_PRODUCT-S02-01
+      name: Golden Set
+    - id: AI_PRODUCT-S02-02
+      name: Quality Threshold
+    - id: AI_PRODUCT-S02-03
+      name: Regression
+    - id: AI_PRODUCT-S02-04
+      name: Cost Latency
+- id: AI_PRODUCT-A03
+  name: Governance
+  dimensions:
+  - id: AI_PRODUCT-D03
+    name: Governance
+    slots:
+    - id: AI_PRODUCT-S03-01
+      name: Model Version
+    - id: AI_PRODUCT-S03-02
+      name: Audit Trail
+    - id: AI_PRODUCT-S03-03
+      name: Sensitive Data
+    - id: AI_PRODUCT-S03-04
+      name: Autonomy Boundary

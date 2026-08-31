@@ -1,0 +1,47 @@
+schema_version: '1.0'
+domain: data-system
+aspects:
+- id: DATA_SYSTEM-A01
+  name: Data Contract
+  dimensions:
+  - id: DATA_SYSTEM-D01
+    name: Data Contract
+    slots:
+    - id: DATA_SYSTEM-S01-01
+      name: Source
+    - id: DATA_SYSTEM-S01-02
+      name: Schema
+    - id: DATA_SYSTEM-S01-03
+      name: Key
+    - id: DATA_SYSTEM-S01-04
+      name: Freshness
+    - id: DATA_SYSTEM-S01-05
+      name: Ownership
+- id: DATA_SYSTEM-A02
+  name: Quality
+  dimensions:
+  - id: DATA_SYSTEM-D02
+    name: Quality
+    slots:
+    - id: DATA_SYSTEM-S02-01
+      name: Missing Values
+    - id: DATA_SYSTEM-S02-02
+      name: Duplicates
+    - id: DATA_SYSTEM-S02-03
+      name: Reconciliation
+    - id: DATA_SYSTEM-S02-04
+      name: Lineage
+- id: DATA_SYSTEM-A03
+  name: Lifecycle
+  dimensions:
+  - id: DATA_SYSTEM-D03
+    name: Lifecycle
+    slots:
+    - id: DATA_SYSTEM-S03-01
+      name: Retention
+    - id: DATA_SYSTEM-S03-02
+      name: Migration
+    - id: DATA_SYSTEM-S03-03
+      name: Backfill
+    - id: DATA_SYSTEM-S03-04
+      name: Deletion

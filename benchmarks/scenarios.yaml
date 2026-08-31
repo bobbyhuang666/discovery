@@ -1,0 +1,26 @@
+schema_version: "1.0"
+scenarios:
+  quick_internal_script:
+    description: "Small authorized script should converge without enterprise ceremony"
+    criteria: [prompt_economy, adaptive_depth, project_inspection, recommended_answer, user_approval]
+  vague_product_opportunity:
+    description: "Unvalidated product idea should prioritize evidence and decisive experiments"
+    criteria: [opportunity_validation, evidence_provenance, clarification_budget, alternative_approaches, automated_research_orchestration]
+  brownfield_behavior_change:
+    description: "Existing-system change should recover current truth and protect regressions"
+    criteria: [brownfield_change, project_inspection, codebase_index, claim_ledger, living_spec, incremental_updates]
+  visual_workflow_ambiguity:
+    description: "Visual preference should be resolved with criticizable alternatives"
+    criteria: [executable_visual_tool, visual_validation, alternative_approaches, recommended_answer, user_approval]
+  high_risk_ai_system:
+    description: "AI autonomy and sensitive data require principles, evidence, review, and readiness"
+    criteria: [project_constitution, evidence_provenance, independent_review, readiness_gate, model_routing_escalation, testable_acceptance]
+  existing_spec_validation:
+    description: "A usable PRD should be validated and incrementally clarified, not restarted"
+    criteria: [clarification_budget, incremental_updates, testable_acceptance, readiness_gate, project_constitution, implementation_alignment]
+  parallel_changes:
+    description: "Multiple active deltas need isolation, flexible actions, and conflict-aware merge"
+    criteria: [living_spec, multi_workstream, fluid_artifact_actions, persistence_handoff, schema_migrations]
+  long_running_discovery:
+    description: "Long and interrupted work needs durable context, indexing, migration, and failure escalation"
+    criteria: [persistence_handoff, codebase_index, schema_migrations, model_routing_escalation, extension_hooks]

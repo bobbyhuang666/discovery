@@ -1,0 +1,66 @@
+{
+  "scenario_id": "vba-purchase-import",
+  "route": {
+    "intent": "discover",
+    "track": "build",
+    "depth": "quick"
+  },
+  "turns": [
+    {
+      "role": "user",
+      "content": "Create a VBA macro that scans purchase workbooks and consolidates the data.",
+      "action": null,
+      "questioned_fact_ids": [],
+      "discovered_requirement_ids": [],
+      "resolved_decision_ids": [],
+      "unsupported_claim_count": 0,
+      "repeated_question": false
+    },
+    {
+      "role": "assistant",
+      "content": "I inspected the sample workbook headers. How should duplicate rows be handled?",
+      "action": "ask",
+      "questioned_fact_ids": [],
+      "discovered_requirement_ids": [
+        "R1"
+      ],
+      "resolved_decision_ids": [],
+      "unsupported_claim_count": 0,
+      "repeated_question": false
+    },
+    {
+      "role": "user",
+      "content": "Keep the latest row and record duplicate counts.",
+      "action": null,
+      "questioned_fact_ids": [],
+      "discovered_requirement_ids": [],
+      "resolved_decision_ids": [],
+      "unsupported_claim_count": 0,
+      "repeated_question": false
+    },
+    {
+      "role": "assistant",
+      "content": "I will preserve the source filename and report files that cannot be read.",
+      "action": "validate",
+      "questioned_fact_ids": [],
+      "discovered_requirement_ids": [
+        "R2"
+      ],
+      "resolved_decision_ids": [
+        "D1"
+      ],
+      "unsupported_claim_count": 0,
+      "repeated_question": false
+    }
+  ],
+  "final": {
+    "discovered_requirement_ids": [
+      "R1",
+      "R2"
+    ],
+    "resolved_decision_ids": [
+      "D1"
+    ],
+    "stop_reason": "Quick gate satisfied"
+  }
+}

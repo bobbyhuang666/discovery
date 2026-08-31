@@ -1,0 +1,23 @@
+spec_version: '15.0'
+intent: discover
+track: opportunity
+depth: standard
+opportunity_statement: ''
+affected_segment: []
+problem_evidence:
+  reality: []
+  frequency_or_trigger: []
+  impact: []
+current_alternatives: []
+switching_constraints: []
+decision_authority: []
+riskiest_assumptions: []
+proposed_experiment:
+  method: ''
+  target_participants_or_data: ''
+  success_criteria: []
+  ambiguous_results: []
+  kill_criteria: []
+commercial_viability: null
+recommendation: validate | proceed | pivot | stop
+next_investment: ''

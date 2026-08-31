@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discovery Change Proposal",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "change_id",
+    "title",
+    "status",
+    "intent",
+    "rationale",
+    "delta",
+    "impact",
+    "verification",
+    "approval",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "change_id": {
+      "type": "string",
+      "pattern": "^CHG-[A-Z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "approved",
+        "in_progress",
+        "implemented",
+        "verified",
+        "archived",
+        "rejected",
+        "superseded"
+      ]
+    },
+    "intent": {
+      "enum": [
+        "discover",
+        "refine",
+        "validate"
+      ]
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "delta": {
+      "type": "object",
+      "required": [
+        "add",
+        "modify",
+        "remove",
+        "preserve"
+      ],
+      "properties": {
+        "add": {
+          "type": "array"
+        },
+        "modify": {
+          "type": "array"
+        },
+        "remove": {
+          "type": "array"
+        },
+        "preserve": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "impact": {
+      "type": "object",
+      "required": [
+        "actors",
+        "requirements",
+        "interfaces",
+        "data",
+        "tests",
+        "operations",
+        "risks"
+      ],
+      "properties": {
+        "actors": {
+          "type": "array"
+        },
+        "requirements": {
+          "type": "array"
+        },
+        "interfaces": {
+          "type": "array"
+        },
+        "data": {
+          "type": "array"
+        },
+        "tests": {
+          "type": "array"
+        },
+        "operations": {
+          "type": "array"
+        },
+        "risks": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "acceptance",
+        "regression",
+        "evidence_refs"
+      ],
+      "properties": {
+        "acceptance": {
+          "type": "array"
+        },
+        "regression": {
+          "type": "array"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "migration": {
+      "type": "array"
+    },
+    "rollback": {
+      "type": "array"
+    },
+    "approval": {
+      "type": "object",
+      "required": [
+        "owner",
+        "approved_at"
+      ],
+      "properties": {
+        "owner": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approved_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

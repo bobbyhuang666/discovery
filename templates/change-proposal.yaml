@@ -1,0 +1,30 @@
+schema_version: "1.0"
+change_id: CHG-EXAMPLE
+title: "Example change"
+status: proposed
+intent: discover
+rationale: ""
+delta:
+  add: []
+  modify: []
+  remove: []
+  preserve: []
+impact:
+  actors: []
+  requirements: []
+  interfaces: []
+  data: []
+  tests: []
+  operations: []
+  risks: []
+verification:
+  acceptance: []
+  regression: []
+  evidence_refs: []
+migration: []
+rollback: []
+approval:
+  owner: null
+  approved_at: null
+created_at: "2026-07-27T00:00:00+00:00"
+updated_at: "2026-07-27T00:00:00+00:00"

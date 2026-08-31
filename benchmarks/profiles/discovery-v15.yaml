@@ -1,0 +1,41 @@
+name: Discovery v15
+repository: local
+source_paths:
+- SKILL.md
+notes: Baseline before competitor-driven v16 changes.
+scores:
+  project_inspection: 2
+  decision_dependency: 2
+  recommended_answer: 2
+  alternative_approaches: 1
+  clarification_budget: 1
+  scope_decomposition: 1
+  adaptive_depth: 2
+  opportunity_validation: 2
+  brownfield_change: 2
+  evidence_provenance: 2
+  project_constitution: 1
+  living_spec: 2
+  fluid_artifact_actions: 1
+  persistence_handoff: 2
+  multi_workstream: 2
+  visual_validation: 2
+  incremental_updates: 1
+  testable_acceptance: 2
+  readiness_gate: 1
+  independent_review: 1
+  evaluation_harness: 2
+  cross_platform: 2
+  user_approval: 1
+  claim_ledger: 2
+  implementation_alignment: 2
+  prompt_economy: 1
+  extension_hooks: 0
+  executable_visual_tool: 1
+  automated_research_orchestration: 0
+  schema_migrations: 0
+  live_model_eval_adapter: 0
+  codebase_index: 1
+  model_routing_escalation: 0
+  installation_tooling: 1
+  custom_artifact_schemas: 0

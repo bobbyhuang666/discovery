@@ -1,0 +1,43 @@
+name: GitHub Spec Kit
+repository: github/spec-kit
+source_paths:
+- templates/commands/clarify.md
+notes: Strong constitution, five-question clarification budget, incremental spec updates,
+  checklists, planning and readiness flow. Less specialized for opportunity discovery
+  and visual elicitation.
+scores:
+  project_inspection: 1
+  decision_dependency: 1
+  recommended_answer: 2
+  alternative_approaches: 1
+  clarification_budget: 2
+  scope_decomposition: 1
+  adaptive_depth: 1
+  opportunity_validation: 0
+  brownfield_change: 1
+  evidence_provenance: 1
+  project_constitution: 2
+  living_spec: 1
+  fluid_artifact_actions: 1
+  persistence_handoff: 2
+  multi_workstream: 1
+  visual_validation: 0
+  incremental_updates: 2
+  testable_acceptance: 2
+  readiness_gate: 2
+  independent_review: 1
+  evaluation_harness: 1
+  cross_platform: 2
+  user_approval: 1
+  claim_ledger: 1
+  implementation_alignment: 2
+  prompt_economy: 1
+  extension_hooks: 2
+  executable_visual_tool: 0
+  automated_research_orchestration: 1
+  schema_migrations: 1
+  live_model_eval_adapter: 1
+  codebase_index: 1
+  model_routing_escalation: 1
+  installation_tooling: 2
+  custom_artifact_schemas: 2

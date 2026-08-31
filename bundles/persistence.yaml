@@ -1,0 +1,6 @@
+schema_version: '1.0'
+name: persistence
+files:
+  - policies/state-persistence.md
+  - runtime/workstreams.md
+  - runtime/handoff.md

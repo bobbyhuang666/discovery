@@ -1,0 +1,66 @@
+schema_version: '1.1'
+context_budgets:
+  quick: 12000
+  standard: 24000
+  deep: 40000
+bootstrap:
+- intents/{intent}.md
+- tracks/{track}.md
+validators:
+  build:
+    quick:
+    - validators/quick-build.md
+    - validators/spec-quality.md
+    standard:
+    - validators/standard-build.md
+    - validators/spec-quality.md
+    deep:
+    - validators/deep-build.md
+    - validators/spec-quality.md
+    - validators/implementation-readiness.md
+  opportunity:
+    quick:
+    - validators/opportunity.md
+    - validators/spec-quality.md
+    standard:
+    - validators/opportunity.md
+    - validators/spec-quality.md
+    deep:
+    - validators/opportunity.md
+    - validators/spec-quality.md
+    - validators/implementation-readiness.md
+  change:
+    quick:
+    - validators/change.md
+    - validators/spec-quality.md
+    standard:
+    - validators/change.md
+    - validators/spec-quality.md
+    deep:
+    - validators/change.md
+    - validators/spec-quality.md
+    - validators/implementation-readiness.md
+depth_bundles:
+  quick:
+  - core-quick
+  standard:
+  - core-quick
+  - core-standard
+  deep:
+  - core-quick
+  - core-standard
+  - core-deep
+conditional_bundles:
+  workspace: workspace
+  persistence: persistence
+  extensions: extensions
+  visual: visual
+  change: change
+  research: research
+  ai: auditor-ai
+  data: auditor-data
+  integration: auditor-integration
+  operations: auditor-operations
+  security: auditor-security
+  stakeholder: auditor-stakeholder
+  viability: auditor-viability

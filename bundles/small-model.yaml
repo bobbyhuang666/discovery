@@ -1,0 +1,4 @@
+schema_version: '1.0'
+name: small-model
+files:
+  - policies/small-model-contract.md

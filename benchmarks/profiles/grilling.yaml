@@ -1,0 +1,43 @@
+name: Matt Pocock Grilling
+repository: mattpocock/skills
+source_paths:
+- skills/productivity/grilling/SKILL.md
+notes: 'Exceptional minimal interview primitive: inspect facts, ask decisions, follow
+  decision dependencies, recommend answers. Deliberately delegates specifications
+  and governance elsewhere.'
+scores:
+  project_inspection: 2
+  decision_dependency: 2
+  recommended_answer: 2
+  alternative_approaches: 0
+  clarification_budget: 1
+  scope_decomposition: 0
+  adaptive_depth: 0
+  opportunity_validation: 0
+  brownfield_change: 1
+  evidence_provenance: 0
+  project_constitution: 0
+  living_spec: 0
+  fluid_artifact_actions: 0
+  persistence_handoff: 0
+  multi_workstream: 0
+  visual_validation: 0
+  incremental_updates: 0
+  testable_acceptance: 0
+  readiness_gate: 0
+  independent_review: 0
+  evaluation_harness: 0
+  cross_platform: 2
+  user_approval: 2
+  claim_ledger: 0
+  implementation_alignment: 0
+  prompt_economy: 2
+  extension_hooks: 0
+  executable_visual_tool: 0
+  automated_research_orchestration: 0
+  schema_migrations: 0
+  live_model_eval_adapter: 0
+  codebase_index: 0
+  model_routing_escalation: 0
+  installation_tooling: 2
+  custom_artifact_schemas: 0

@@ -1,0 +1,23 @@
+schema_version: "1.0"
+title: Dashboard layout comparison
+decision: Choose the information hierarchy for the first screen
+options:
+  - id: option-a
+    title: Globe-led overview
+    summary: A central strategic visual with compact supporting panels
+    tradeoff: Strong executive impact, lower dense-data capacity
+    regions:
+      - {label: Navigation, span: 12, height: small, emphasis: low}
+      - {label: Signals, span: 3, height: large, emphasis: medium}
+      - {label: Primary visual, span: 6, height: large, emphasis: high}
+      - {label: Decisions, span: 3, height: large, emphasis: medium}
+  - id: option-b
+    title: Evidence-led workspace
+    summary: A dense analysis surface with the visual as supporting context
+    tradeoff: Faster scanning, less iconic first impression
+    regions:
+      - {label: Navigation, span: 12, height: small, emphasis: low}
+      - {label: Evidence table, span: 8, height: large, emphasis: high}
+      - {label: Context visual, span: 4, height: medium, emphasis: medium}
+      - {label: Actions, span: 4, height: medium, emphasis: medium}
+      - {label: Detail, span: 8, height: medium, emphasis: low}

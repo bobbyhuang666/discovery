@@ -1,0 +1,121 @@
+schema_version: '1.0'
+benchmark_type: protocol_contract
+warning: Measures explicit protocol coverage in source artifacts, not live model quality
+  or project popularity.
+score_scale:
+  0: absent
+  1: partial_or_implicit
+  2: explicit_and_operational
+criteria:
+  project_inspection:
+    weight: 5
+    description: Inspects code, docs, tests, or environment before asking discoverable
+      facts
+  decision_dependency:
+    weight: 5
+    description: Orders work by decision dependencies rather than a fixed questionnaire
+  recommended_answer:
+    weight: 4
+    description: Provides an evidence-based recommendation for material choices
+  alternative_approaches:
+    weight: 4
+    description: Compares genuinely distinct approaches and trade-offs
+  clarification_budget:
+    weight: 4
+    description: Limits a clarification pass and prioritizes high-value questions
+  scope_decomposition:
+    weight: 4
+    description: Splits independently valuable or deployable subsystems
+  adaptive_depth:
+    weight: 4
+    description: Scales process and output to task risk and complexity
+  opportunity_validation:
+    weight: 4
+    description: Separates market/opportunity evidence from authorized build discovery
+  brownfield_change:
+    weight: 5
+    description: Recovers current behavior and manages deltas in existing systems
+  evidence_provenance:
+    weight: 5
+    description: Tracks source type and distinguishes evidence, inference, and authority
+  project_constitution:
+    weight: 4
+    description: Maintains durable project principles and amendment rules
+  living_spec:
+    weight: 5
+    description: Separates current accepted truth from proposed changes and archives
+      verified deltas
+  fluid_artifact_actions:
+    weight: 4
+    description: Artifacts enable flexible actions rather than a rigid one-way phase
+      lock
+  persistence_handoff:
+    weight: 5
+    description: Supports reliable resume, handoff, and context recovery
+  multi_workstream:
+    weight: 4
+    description: Isolates parallel changes or workstreams
+  visual_validation:
+    weight: 3
+    description: Uses visual artifacts when seeing is more reliable than describing
+  incremental_updates:
+    weight: 4
+    description: Integrates accepted answers or changes incrementally and atomically
+  testable_acceptance:
+    weight: 5
+    description: Converts P0 behavior into observable acceptance checks
+  readiness_gate:
+    weight: 5
+    description: Provides an explicit implementation-readiness verdict
+  independent_review:
+    weight: 4
+    description: Separates author and verifier when possible
+  evaluation_harness:
+    weight: 5
+    description: Includes repeatable behavioral or workflow evaluation
+  cross_platform:
+    weight: 3
+    description: Supports multiple major coding-agent runtimes
+  user_approval:
+    weight: 4
+    description: Records appropriate human approval before consequential execution
+  claim_ledger:
+    weight: 4
+    description: Corroborates current-system claims across code, tests, runtime, docs,
+      and authority
+  implementation_alignment:
+    weight: 4
+    description: Checks plan or implementation against accepted requirements
+  prompt_economy:
+    weight: 4
+    description: Keeps the core interaction contract focused and avoids mandatory
+      over-processing
+  extension_hooks:
+    weight: 3
+    description: Supports validated team-specific hooks without editing core logic
+  executable_visual_tool:
+    weight: 3
+    description: Provides an operational visual companion or visual-tool integration,
+      not only advice
+  automated_research_orchestration:
+    weight: 4
+    description: Can divide and synthesize independent current-research packs
+  schema_migrations:
+    weight: 3
+    description: Migrates persisted artifacts across schema versions with backups
+  live_model_eval_adapter:
+    weight: 5
+    description: Can execute or export held-out scenarios through external model runtimes
+  codebase_index:
+    weight: 4
+    description: Builds a reusable project context index or codebase map
+  model_routing_escalation:
+    weight: 3
+    description: Routes work by model profile and escalates on explicit failure conditions
+  installation_tooling:
+    weight: 3
+    description: Provides repeatable installation or update tooling across supported
+      runtimes
+  custom_artifact_schemas:
+    weight: 3
+    description: Allows validated project-specific artifact schemas or registries

@@ -1,0 +1,11 @@
+{
+  "clarity": "clear",
+  "risk": "low",
+  "reversibility": "easy",
+  "scope": "tiny",
+  "sensitive_data": false,
+  "external_side_effect": false,
+  "workspace_uncertainty": false,
+  "material_uncertainty": false,
+  "user_requested_discovery": false
+}

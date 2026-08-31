@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discovery Interview Scenario",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "public_prompt",
+      "expected_intent",
+      "expected_track",
+      "expected_depth",
+      "discoverable_facts",
+      "decision_only_information",
+      "hidden_requirements",
+      "critical_decisions",
+      "stop_conditions"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "public_prompt": {
+        "type": "string"
+      },
+      "expected_intent": {
+        "enum": [
+          "discover",
+          "refine",
+          "validate"
+        ]
+      },
+      "expected_track": {
+        "enum": [
+          "build",
+          "opportunity",
+          "change"
+        ]
+      },
+      "expected_depth": {
+        "enum": [
+          "quick",
+          "standard",
+          "deep"
+        ]
+      },
+      "discoverable_facts": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "fact"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "fact": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "decision_only_information": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "information"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "information": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "hidden_requirements": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "requirement",
+            "critical"
+          ],
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "requirement": {
+              "type": "string"
+            },
+            "critical": {
+              "type": "boolean"
+            }
+          }
+        }
+      },
+      "critical_decisions": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "stop_conditions": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "additionalProperties": false
+  }
+}

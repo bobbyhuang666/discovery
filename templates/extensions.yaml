@@ -1,0 +1,9 @@
+schema_version: "1.0"
+hooks:
+  before_orient: []
+  after_inspect: []
+  before_ask: []
+  after_answer: []
+  before_validate: []
+  after_validate: []
+  before_handoff: []

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discovery LLM Action",
+  "type": "object",
+  "required": [
+    "action",
+    "rationale",
+    "state_events"
+  ],
+  "properties": {
+    "action": {
+      "enum": [
+        "ask",
+        "inspect",
+        "research",
+        "test",
+        "sketch",
+        "prototype",
+        "default",
+        "summarize",
+        "validate",
+        "stop",
+        "compare",
+        "create_spec",
+        "plan",
+        "block",
+        "transition",
+        "classify",
+        "complete"
+      ]
+    },
+    "decision_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "question": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recommendation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "reversal_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "state_events": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "requested_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "user_visible_message": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "options": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "string"
+      }
+    },
+    "capability_fallback": {
+      "anyOf": [
+        {
+          "enum": [
+            "filesystem",
+            "code_search",
+            "command_execution",
+            "web",
+            "visual_rendering",
+            "persistence"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "additionalProperties": false
+}

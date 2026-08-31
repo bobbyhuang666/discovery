@@ -1,0 +1,4 @@
+schema_version: '1.0'
+name: auditor-integration
+files:
+  - auditors/integration.md

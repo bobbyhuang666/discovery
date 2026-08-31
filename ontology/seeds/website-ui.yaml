@@ -1,0 +1,47 @@
+schema_version: '1.0'
+domain: website-ui
+aspects:
+- id: WEBSITE_UI-A01
+  name: Experience
+  dimensions:
+  - id: WEBSITE_UI-D01
+    name: Experience
+    slots:
+    - id: WEBSITE_UI-S01-01
+      name: Primary Task
+    - id: WEBSITE_UI-S01-02
+      name: Navigation
+    - id: WEBSITE_UI-S01-03
+      name: Empty State
+    - id: WEBSITE_UI-S01-04
+      name: Error State
+- id: WEBSITE_UI-A02
+  name: Visual
+  dimensions:
+  - id: WEBSITE_UI-D02
+    name: Visual
+    slots:
+    - id: WEBSITE_UI-S02-01
+      name: Hierarchy
+    - id: WEBSITE_UI-S02-02
+      name: Density
+    - id: WEBSITE_UI-S02-03
+      name: Responsive
+    - id: WEBSITE_UI-S02-04
+      name: Motion
+    - id: WEBSITE_UI-S02-05
+      name: Accessibility
+- id: WEBSITE_UI-A03
+  name: Content
+  dimensions:
+  - id: WEBSITE_UI-D03
+    name: Content
+    slots:
+    - id: WEBSITE_UI-S03-01
+      name: Terminology
+    - id: WEBSITE_UI-S03-02
+      name: Source Of Truth
+    - id: WEBSITE_UI-S03-03
+      name: Localization
+    - id: WEBSITE_UI-S03-04
+      name: Trust Signals

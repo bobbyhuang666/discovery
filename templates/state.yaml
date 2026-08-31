@@ -1,0 +1,95 @@
+schema_version: '4.1'
+skill_version: 17.1.0
+session_id: example-session
+runtime:
+  mode: deterministic-host
+  revision: 0
+  loaded_bundles: []
+  context_metrics:
+    budget_chars: 0
+    used_chars: 0
+    loaded_files: []
+    deferred_files: []
+  last_committed_at: null
+  model_tier: standard
+  capabilities:
+  - filesystem
+  - command_execution
+  - persistence
+  capability_notices: []
+last_event_id: null
+project_fingerprint:
+  project_id: example-project
+  branch: null
+  revision: null
+  inspected_paths: []
+intent: discover
+track: build
+depth: standard
+stage: orienting
+workstream_id: null
+interaction_profile:
+  expertise: mixed
+  response_style: detailed
+  decision_style: wants_recommendation
+  channel: realtime
+  fatigue: low
+facts: []
+claims: []
+derived_findings: []
+assumptions: []
+unknowns: []
+conflicts: []
+constraints: []
+non_goals: []
+decisions: []
+requirements: []
+evidence: []
+question_history: []
+clarification_pass:
+  max_questions: 5
+  asked: 0
+  accepted: 0
+  active_concern_id: null
+  remaining_high_impact: []
+concern_tree:
+  ref: null
+  covered: 0
+  partial: 0
+  untouched: 0
+  not_applicable: 0
+  deferred: 0
+coverage_map:
+  ref: null
+  clear: 0
+  partial: 0
+  missing: 0
+  not_applicable: 0
+  deferred: 0
+living_spec:
+  current_ref: null
+  active_change_refs: []
+  archive_ref: null
+constitution:
+  ref: null
+  status: missing
+approval:
+  level: none
+  status: not_required
+  approver: null
+  artifact_ref: null
+artifact_graph:
+  available_actions:
+  - inspect
+  blocked_actions: []
+handoff:
+  ref: null
+  pending_human_actions: []
+  files_to_read_next: []
+next_action:
+  type: inspect
+  target: workspace
+  reason: Establish current context before asking discoverable facts
+  decision_id: null
+  expected_branching_value: not_applicable
+updated_at: '2026-07-27T00:00:00+00:00'

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Discovery Request Profile",
+  "type": "object",
+  "required": ["clarity", "risk", "reversibility"],
+  "properties": {
+    "clarity": {"enum": ["clear", "partial", "unclear"]},
+    "risk": {"enum": ["low", "medium", "high"]},
+    "reversibility": {"enum": ["easy", "moderate", "hard"]},
+    "scope": {"enum": ["tiny", "bounded", "large"], "default": "bounded"},
+    "sensitive_data": {"type": "boolean", "default": false},
+    "external_side_effect": {"type": "boolean", "default": false},
+    "workspace_uncertainty": {"type": "boolean", "default": false},
+    "material_uncertainty": {"type": "boolean", "default": false},
+    "user_requested_discovery": {"type": "boolean", "default": false}
+  },
+  "additionalProperties": false
+}

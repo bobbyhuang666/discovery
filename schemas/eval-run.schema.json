@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Annotated Discovery Evaluation Run",
+  "type": "object",
+  "required": [
+    "scenario_id",
+    "route",
+    "turns",
+    "final"
+  ],
+  "properties": {
+    "scenario_id": {
+      "type": "string"
+    },
+    "route": {
+      "type": "object",
+      "required": [
+        "intent",
+        "track",
+        "depth"
+      ],
+      "properties": {
+        "intent": {
+          "type": "string"
+        },
+        "track": {
+          "type": "string"
+        },
+        "depth": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "turns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "role",
+          "content"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "user",
+              "assistant",
+              "tool"
+            ]
+          },
+          "content": {
+            "type": "string"
+          },
+          "action": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "questioned_fact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "discovered_requirement_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "resolved_decision_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unsupported_claim_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "repeated_question": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "final": {
+      "type": "object",
+      "required": [
+        "discovered_requirement_ids",
+        "resolved_decision_ids",
+        "stop_reason"
+      ],
+      "properties": {
+        "discovered_requirement_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "resolved_decision_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "stop_reason": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,139 @@
+[
+  {
+    "id": "quick_vba",
+    "input": "Create a VBA macro to scan purchase workbooks and extract fixed columns.",
+    "expected_track": "build",
+    "expected_depth": "quick",
+    "mandatory_actions": [
+      "inspect",
+      "ask"
+    ],
+    "forbidden_actions": [
+      "market_validation",
+      "retention_analysis"
+    ],
+    "expected_template": "templates/quick-build.yaml",
+    "expected_intent": "discover"
+  },
+  {
+    "id": "enterprise_ai",
+    "input": "Build an AI claims approval platform handling sensitive financial documents.",
+    "expected_track": "build",
+    "expected_depth": "deep",
+    "mandatory_auditors": [
+      "ai",
+      "data",
+      "integration",
+      "operations",
+      "security",
+      "stakeholder"
+    ],
+    "expected_template": "templates/deep-build.yaml",
+    "expected_intent": "discover"
+  },
+  {
+    "id": "startup_idea",
+    "input": "I have an idea for an AI meeting assistant but do not know if customers need it.",
+    "expected_track": "opportunity",
+    "expected_depth": "standard",
+    "mandatory_actions": [
+      "ask",
+      "test"
+    ],
+    "forbidden_actions": [
+      "full_feature_spec"
+    ],
+    "expected_template": "templates/opportunity.yaml",
+    "expected_intent": "discover"
+  },
+  {
+    "id": "existing_auth_change",
+    "input": "Add organization workspaces to this existing single-user app.",
+    "expected_track": "change",
+    "expected_depth": "deep",
+    "mandatory_actions": [
+      "inspect",
+      "test"
+    ],
+    "forbidden_actions": [
+      "ask_existing_framework"
+    ],
+    "expected_template": "templates/change-delta.yaml",
+    "expected_intent": "discover"
+  },
+  {
+    "id": "ui_redesign",
+    "input": "Redesign the existing executive dashboard to feel premium and calm.",
+    "expected_track": "change",
+    "expected_depth": "standard",
+    "mandatory_auditors": [
+      "style"
+    ],
+    "mandatory_actions": [
+      "inspect",
+      "prototype"
+    ],
+    "expected_template": "templates/change-delta.yaml",
+    "expected_intent": "discover"
+  },
+  {
+    "id": "one_off_migration",
+    "input": "Migrate legacy customer records to the new database once.",
+    "expected_track": "change",
+    "expected_depth": "deep",
+    "mandatory_auditors": [
+      "data",
+      "operations"
+    ],
+    "forbidden_actions": [
+      "retention_analysis"
+    ],
+    "expected_template": "templates/change-delta.yaml",
+    "expected_intent": "discover"
+  },
+  {
+    "id": "commercial_growth",
+    "input": "Validate pricing, retention, and distribution for a new B2B SaaS idea.",
+    "expected_track": "opportunity",
+    "expected_depth": "deep",
+    "mandatory_auditors": [
+      "viability-growth",
+      "stakeholder"
+    ],
+    "expected_template": "templates/opportunity.yaml",
+    "expected_intent": "discover"
+  },
+  {
+    "id": "simple_direct_edit",
+    "input": "Change the button label from Save to Submit.",
+    "should_trigger": false,
+    "reason": "Tiny direct edit with complete instruction"
+  },
+  {
+    "id": "factual_question",
+    "input": "What does idempotency mean?",
+    "should_trigger": false,
+    "reason": "Pure factual question"
+  },
+  {
+    "id": "async_channel",
+    "input": "Ask remaining questions by email in as few messages as possible.",
+    "expected_policy": "one decision theme with up to three coupled fields"
+  },
+  {
+    "id": "refine_existing_prd",
+    "input": "Improve this existing PRD without restarting discovery.",
+    "expected_intent": "refine",
+    "expected_track": "build",
+    "expected_depth": "standard",
+    "expected_template": "templates/standard-build.yaml"
+  },
+  {
+    "id": "validate_migration_plan",
+    "input": "Validate whether this existing migration plan is ready.",
+    "expected_intent": "validate",
+    "expected_track": "change",
+    "expected_depth": "deep",
+    "expected_template": "templates/change-delta.yaml"
+  }
+]

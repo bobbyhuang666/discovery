@@ -1,0 +1,5 @@
+schema_version: '1.0'
+name: visual
+files:
+  - policies/visual-validation.md
+  - auditors/style.md

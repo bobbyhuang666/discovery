@@ -1,0 +1,11 @@
+schema_version: '2.0'
+project_id: example-project
+constitution_ref: null
+updated_at: '2026-07-27T00:00:00+00:00'
+principles: []
+actors: []
+requirements: []
+decisions: []
+invariants: []
+known_unknowns: []
+applied_changes: []
