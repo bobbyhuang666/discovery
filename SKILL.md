@@ -16,6 +16,12 @@ metadata:
 
 Turn material uncertainty into the smallest honest artifact that supports the next safe action. Do not turn every request into an interview.
 
+## Language and source fidelity
+
+Use the end user's language for questions, explanations, human-readable artifacts, product UI (including empty states and accessibility labels), and delivery replies unless they request otherwise. English Skill instructions or host orchestration do not change that preference. Keep machine-readable keys, enum values, identifiers, and commands intact; localize their human-facing labels.
+
+Preserve the user's original wish when passing it to `deliver`; do not replace it with a translation or expanded specification. Put derived technical interpretation, defaults, and constraints in a separate brief or planning notes, distinguishing them from the user's words. Apply the same distinction to later feedback.
+
 ## 0. Triage before loading Discovery
 
 Classify the request with `schemas/request-profile.schema.json` or run:
@@ -41,6 +47,8 @@ Explicit discovery requests always enter Discovery. Complexity must earn its cos
 7. Do not expose private reasoning. Show concise decisions, evidence, uncertainty, and requested actions.
 
 ## Preferred runtime
+
+The optional runtime can run from this Skill's installed source without a global CLI; see [USAGE.md](USAGE.md). For module execution from a read-only Skill installation, use `python3 -B` (or `PYTHONDONTWRITEBYTECODE=1`) so imports do not write bytecode into it. Keep generated state and products in the selected workspace.
 
 When the `discovery` CLI is available, route with the actual capability and model profile:
 
@@ -93,6 +101,14 @@ Never load every policy by default.
 ## Completion gate
 
 The stage is complete only when the next goal and owner are clear, no blocking high-impact decision remains, P0 implementation behavior has executable acceptance criteria, current truth and proposed change remain separate, and residual unknowns are explicitly managed.
+
+## Explicit local product delivery
+
+Only enter the optional delivery loop when the user explicitly asks for a working website, app, or internal tool. Analysis, exploration, requirements clarification, and specification requests remain Discovery tasks; do not silently turn them into implementation. Discovery complete means ready for handoff, not product delivered.
+
+When authorized, `discovery deliver "<wish>" --workspace <directory>` runs bounded planning, building, local execution, acceptance, independent review, and repair. Use `delivery-status` to inspect progress and `delivery-resume` to provide an answer or product feedback. State is saved under `<directory>/.delivery/state.yaml`; product files are under `<directory>/product`. In a host app that can dispatch subagents, `--executor handoff` passes model work to the host with the requested model/effort intact; otherwise the Codex CLI executor is the default. Ask the user when an unresolved choice requires their authority; never invent permission or claim delivery without verification.
+
+Delivery is local-preview only: do not publish or deploy. The user can open the product with `discovery delivery-preview --workspace <directory>`; the foreground preview stops on Ctrl-C. The current runtime supports macOS/Linux, and acceptance commands run as local child processes rather than in a security sandbox. See [runtime/delivery.md](runtime/delivery.md) and [USAGE.md](USAGE.md) for command details and permission boundaries.
 
 ## Prohibited
 

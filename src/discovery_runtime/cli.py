@@ -34,6 +34,9 @@ def add_route_args(p):
     p.add_argument("--capabilities",default=None,help="Comma-separated runtime capabilities, 'none', or omit for legacy auto-assume")
     p.add_argument("--model-tier",choices=["light","standard","strong"],default="standard")
     p.add_argument("--no-quick-exit",action="store_true")
+def optional_skill_root()->Path|None:
+    try: return skill_root()
+    except FileNotFoundError: return None
 def main(argv=None)->int:
     ap=argparse.ArgumentParser(prog="discovery"); sub=ap.add_subparsers(dest="cmd",required=True)
     p=sub.add_parser("triage"); p.add_argument("--profile",required=True,help="JSON string or @file"); p.add_argument("--json",action="store_true")
@@ -46,7 +49,13 @@ def main(argv=None)->int:
     p=sub.add_parser("recover"); p.add_argument("--workspace",default=".")
     p=sub.add_parser("validate-state"); p.add_argument("--state",default=".discovery/state.yaml")
     p=sub.add_parser("validate-action"); p.add_argument("--action",required=True,help="JSON string or @file"); p.add_argument("--model-tier",choices=["light","standard","strong"],default="standard")
-    a=ap.parse_args(argv); root=skill_root()
+    from .delivery_cli import add_delivery_args
+    add_delivery_args(sub)
+    a=ap.parse_args(argv)
+    if a.cmd in {"deliver","delivery-status","delivery-resume","delivery-preview"}:
+        from .delivery_cli import run_delivery_command
+        return run_delivery_command(a,skill_root=optional_skill_root())
+    root=skill_root()
     if a.cmd=="triage":
         result=triage_request(RequestProfile.from_dict(read_json_arg(a.profile)))
         data=result.to_dict(); print(json.dumps(data,indent=2,ensure_ascii=False) if a.json else f"{data['outcome']}\n"+"\n".join(data['reasons'])); return 0
